@@ -619,7 +619,7 @@ toAscii = (text) ->
 
 ccall = (args...) ->
   doc = args.shift()
-  console.log doc, args
+  # console.log doc, args
   ret = Module['ccall'](args...)
   fn_name = args[0]
   throwIfFailed(doc, fn_name)
